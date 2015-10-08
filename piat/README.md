@@ -33,3 +33,12 @@ Follow https://docs.mesosphere.com/services/kubernetes/ to install K8S and `kube
 - http://kubernetes.io/v1.0/docs/design/architecture.html
 - https://github.com/kubernetes/kubernetes/blob/release-1.0/contrib/mesos/docs/architecture.md
 - https://github.com/jeffmendoza/kubernetes/blob/gh-pages/solutions/mesosphere.md
+
+
+## Navigation
+
+1. [Setup](../)
+1. [Containers &amp; Docker](./docker)
+1. [Mesos &amp; Marathon](./mesos-marathon)
+1. [Kubernetes](./kubernetes)
+1. Putting It All Together (You Are Here)

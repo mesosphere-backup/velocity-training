@@ -2,18 +2,6 @@
 
 http://www.nkode.io/2014/08/24/valuable-docker-links.html
 
-
-## Setup
-
-Make sure you have your DCOS cluster per group.
-
-    # add key once:
-    ssh-add ~/.ssh/mesosphere-training-aws
-    # log in with forwarding enabled (so that you can log in from master to one of the slaves)
-    ssh -A core@MASTER_IP_ADDRESS
-
-We will carry out the following tasks on the Mesos master instance of the DCOS. It is a CoreOS environment, so Docker native.
-
 ## build
 
     cd $DIR_THAT_CONTAINS_A_DOCKERFILE
@@ -51,3 +39,11 @@ Make sure the repo exists under https://hub.docker.com/u/mhausenblas/ and then:
     docker rm $(docker ps -a -q)
     docker rmi $IMAGE_ID
 
+
+## Navigation
+
+1. [Setup](../)
+1. Containers &amp; Docker (You Are Here)
+1. [Mesos &amp; Marathon](./mesos-marathon)
+1. [Kubernetes](./kubernetes)
+1. [Putting It All Together](./piat)
