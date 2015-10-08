@@ -19,7 +19,7 @@ https://mesosphere.github.io/marathon/docs/
 
 ## Navigation
 
-1. [Setup](../)
+1. [Setup](../README.md)
 1. [Containers &amp; Docker](../docker)
 1. Mesos &amp; Marathon (You Are Here)
 1. [Kubernetes](../kubernetes)

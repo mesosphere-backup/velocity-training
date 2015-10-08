@@ -42,7 +42,7 @@ Make sure the repo exists under https://hub.docker.com/u/mhausenblas/ and then:
 
 ## Navigation
 
-1. [Setup](../)
+1. [Setup](../README.md)
 1. Containers &amp; Docker (You Are Here)
 1. [Mesos &amp; Marathon](../mesos-marathon)
 1. [Kubernetes](../kubernetes)

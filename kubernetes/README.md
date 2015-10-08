@@ -8,7 +8,7 @@ http://kubernetes.io/v1.0/
 
 ## Navigation
 
-1. [Setup](../)
+1. [Setup](../README.md)
 1. [Containers &amp; Docker](../docker)
 1. [Mesos &amp; Marathon](../mesos-marathon)
 1. Kubernetes (You Are Here)
