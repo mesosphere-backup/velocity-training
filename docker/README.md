@@ -44,6 +44,6 @@ Make sure the repo exists under https://hub.docker.com/u/mhausenblas/ and then:
 
 1. [Setup](../)
 1. Containers &amp; Docker (You Are Here)
-1. [Mesos &amp; Marathon](./mesos-marathon)
-1. [Kubernetes](./kubernetes)
-1. [Putting It All Together](./piat)
+1. [Mesos &amp; Marathon](../mesos-marathon)
+1. [Kubernetes](../kubernetes)
+1. [Putting It All Together](../piat)
