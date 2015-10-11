@@ -3,6 +3,10 @@
 Keep https://mesosphere.github.io/marathon/docs/ open in a browser, you'll need it.
 
 
+## Install Marathon
+
+Since Marathon is installed by default on DCOS this is a NOP.
+
 ## Launching apps via the Marathon UI 
 
 - Got to DCOS dashboard

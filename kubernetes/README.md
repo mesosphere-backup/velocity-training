@@ -1,6 +1,6 @@
 # Kubernetes 101
 
-Keep http://kubernetes.io/v1.0/ somewhere open.
+Keep http://kubernetes.io/v1.0/ open in a browser, you'll need it.
 
 
 ## Install Kubernetes

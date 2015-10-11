@@ -15,17 +15,29 @@ We will carry out the following tasks on the Mesos master instance of the DCOS. 
 
 If you have issues sshing into the Master, check out https://docs.mesosphere.com/services/sshcluster/ or ask for help.
 
-## find and run
+## Find Docker images
     
-    $ docker run -it 
-    $ docker run -d
-    $ docker ps -a
-    $ docker ps -l
     $ docker images
     $ docker search ubuntu
-    $ docker run -t -i ubuntu:14.04 /bin/bash
 
-## build
+## Run Docker containers
+    
+    $ docker run -t -i ubuntu:14.04 /bin/bash
+    # play around in the Ubuntu container and exit again
+    $ docker ps -l
+    # note the container ID of your Ubuntu container
+    $ docker kill $CONTAINER_ID 
+    $ docker ps -a
+
+## Introspect Docker containers
+
+    $ docker run -d ubuntu:14.04 /bin/bash
+    # note the container ID of your Ubuntu container
+    $ docker exec -it $CONTAINER_ID sh
+    $ docker logs $CONTAINER_ID
+    $ docker inspect $CONTAINER_ID
+
+## Build Docker images
 
     $ mkdir -p mh9test/nginx
     $ cd mh9test/nginx
@@ -39,7 +51,7 @@ If you have issues sshing into the Master, check out https://docs.mesosphere.com
     $ docker build -t mh9test/nginx:v2 .
     $ docker run -d -p 8081:80 mh9test/nginx:v2
 
-## pull and push
+## Pull and push Docker images to a registry
 
     $ docker pull ubuntu:latest
 
@@ -52,13 +64,7 @@ Make sure the repo exists under your account, say https://hub.docker.com/u/mhaus
     $ docker tag 5891be3406d7 mhausenblas/m-shop-app 
     $ docker push mhausenblas/m-shop-app
 
-## introspection 
-
-    docker exec -it $CONTAINER_ID sh
-    docker logs $CONTAINER_ID
-    docker inspect $CONTAINER_ID
-
-## clean up
+## Clean up Docker images and containers
 
     $ docker rm -v $(docker ps -a -q -f status=exited)
     $ docker rmi $(docker images -f "dangling=true" -q)
