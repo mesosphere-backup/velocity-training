@@ -7,7 +7,7 @@ Fill in with your own coordinates:
     Dashboard: http://
     Master IP:
     Public Slave: http://
-    KubeUI: http://.../service/kubernetes/api/v1/proxy/namespaces/kube-system/services/kube-ui/
+    KubeUI: http://$DCOS_DASHBOARD_FQHN/service/kubernetes/api/v1/proxy/namespaces/kube-system/services/kube-ui/
 
 ## Example: a hybrid workload
 

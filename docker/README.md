@@ -2,7 +2,7 @@
 
 There are a few [valuable Docker](http://www.nkode.io/2014/08/24/valuable-docker-links.html) links out there.
 
-## Setup
+## Install
 
 Make sure you have your DCOS cluster per team up and running. Then do:
 
