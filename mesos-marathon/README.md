@@ -20,9 +20,10 @@ Since Marathon is installed by default on DCOS this is a NOP.
 
 Note that we will use [HTTPie](http://httpie.org) in the following but you can use `curl` should you wish to do that.
 
-    $ http POST http://$DCOS_DASHBOARD_FQHN/service/marathon/v2/apps < marathon-hello-world.json
+    $ cd $DCOS_CLI_HOME
+    $ http POST http://$DCOS_DASHBOARD_FQHN/service/marathon/v2/apps < velocity-training/mesos-marathon/marathon-hello-world.json
 
-There are a few more sample app specs here in this directory, such as `marathon-peek.json`. Play around. Try the same things you did before in the UI now via the HTTP API.
+There are two more sample app specs here in this directory: `marathon-peek.json` that launches a Docker images and `marathon-private-registry.json` that launches a Docker registry. 
 
 ## List apps via Marathon HTTP API
 
@@ -30,5 +31,6 @@ There are a few more sample app specs here in this directory, such as `marathon-
 
 ## Use Marathon in DCOS
 
-    $ dcos marathon app add marathon-private-registry.json
+    $ cd $DCOS_CLI_HOME
+    $ dcos marathon app add velocity-training/mesos-marathon/marathon-private-registry.json
     $ dcos marathon app list

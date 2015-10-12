@@ -11,12 +11,35 @@ Fill in with your own coordinates:
 
 ## Example: a hybrid workload
 
+We will create a simple hybrid app, consisting of a Kubernetes part and a Marathon part:
+
+![Piat Hybrid Example](../img/piat-hybrid-example.png)
+
+Do the steps as outlined below and pay attention to figuring out the IP of host Kubernetes schedules the nginx pod on, since you'll need to change `marathon-gen.json` in the following way:
+
+    ...
+    "constraints": [
+        [
+            "hostname",
+            "LIKE",
+            "ip-10-0-0-202.eu-west-1.compute.internal"
+        ]
+    ]
+    ...
+
+Change the value of `ip-10-0-0-202.eu-west-1.compute.internal` to whatever the FQHN of the Kubernetes host is you've discovered.
+
+
+    $ cd $DCOS_CLI_HOME
     $ dcos package list
-    $ dcos marathon app add ./marathon-gen.json
-    $ kubectl create -f ./k8s-webserver-pod.json
+    # launch the Kubernetes part:
+    $ kubectl create -f velocity-training/piat/k8s-webserver-pod.json
     $ kubectl get pods
-    $ kubectl create -f ./k8s-webserver-service.json
+    $ kubectl create -f velocity-training/piat/k8s-webserver-service.json
     $ kubectl get services
+    # launch the Marathon part (note the IP address of the nginx service and change constraint in marathon-gen.json):
+    $ dcos marathon app add velocity-training/piat/marathon-gen.json
+    $ dcos marathon app list
     $ kubectl delete service nginx-service
     $ kubectl delete pod nginx
 
