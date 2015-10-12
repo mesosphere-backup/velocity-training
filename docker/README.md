@@ -26,9 +26,6 @@ If you have issues sshing into the Master, check out https://docs.mesosphere.com
     
     $ docker run -t -i ubuntu:14.04 /bin/bash
     # play around in the Ubuntu container and exit again
-    $ docker ps -l
-    # note the container ID of your Ubuntu container
-    $ docker kill $CONTAINER_ID 
     $ docker ps -a
 
 ## Introspect Docker containers
@@ -38,6 +35,7 @@ If you have issues sshing into the Master, check out https://docs.mesosphere.com
     $ docker exec -it $CONTAINER_ID sh
     $ docker logs $CONTAINER_ID
     $ docker inspect $CONTAINER_ID
+    $ docker kill $CONTAINER_ID 
 
 ## Build Docker images
 
