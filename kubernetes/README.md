@@ -11,7 +11,7 @@ Make sure you're in `$DCOS_CLI_HOME`. The, follow the instructions in https://do
     $ dcos package update --validate
     $ dcos package install kubernetes
 
-... and then `kubectl` from there as well.
+... and then [kubectl](https://docs.mesosphere.com/services/kubernetes/#a-namefivealaunch-a-kubernetes-pod-and-service-by-using-kubectl) from there as well.
 
 Once you have Kubernetes as a service installed and `kubectl` the CLI on your local laptop, do:
 
