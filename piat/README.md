@@ -12,10 +12,10 @@ Fill in with your own coordinates:
 ## Example: a hybrid workload
 
     $ dcos package list
-    $ dcos marathon app add marathon-gen.json
-    $ kubectl create -f ../kubernetes/k8s-webserver-pod.json
+    $ dcos marathon app add ./marathon-gen.json
+    $ kubectl create -f ./k8s-webserver-pod.json
     $ kubectl get pods
-    $ kubectl create -f ../kubernetes/k8s-webserver-service.json
+    $ kubectl create -f ./k8s-webserver-service.json
     $ kubectl get services
     $ kubectl delete service nginx-service
     $ kubectl delete pod nginx

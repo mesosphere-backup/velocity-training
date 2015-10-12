@@ -23,7 +23,22 @@
                         "cpu": "500m",
                         "memory": "128Mi"
                     }
-                }
+                },
+                "volumeMounts": [
+                    {
+                        "mountPath": "/usr/share/nginx/html",
+                        "name": "genvol",
+                        "readOnly": true
+                    }
+                ]
+            }
+        ],
+        "volumes": [
+            {
+                "hostPath": {
+                    "path": "/tmp/gen/"
+                },
+                "name": "genvol"
             }
         ]
     }
