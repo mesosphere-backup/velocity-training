@@ -6,8 +6,10 @@ There are a few [valuable Docker](http://www.nkode.io/2014/08/24/valuable-docker
 
 Make sure you have your DCOS cluster per team up and running. Then do:
 
+    # get your team key from http://j.mp/velocity-2015-container-training 
+    $ chmod 600 ~/.ssh/your-team-key
     # add key once:
-    ssh-add ~/.ssh/mesosphere-training-aws
+    ssh-add ~/.ssh/your-team-key
     # log in with forwarding enabled (so that you can log in from master to one of the agents)
     ssh -A core@MASTER_IP_ADDRESS
 
