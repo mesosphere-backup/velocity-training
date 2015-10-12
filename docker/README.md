@@ -33,7 +33,7 @@ If you have issues sshing into the Master, check out https://docs.mesosphere.com
 
 ## Introspect Docker containers
 
-    $ docker run -d ubuntu:14.04 /bin/bash
+    $ docker run -d ubuntu:14.04 /bin/bash tail -f /dev/null 
     # note the container ID of your Ubuntu container
     $ docker exec -it $CONTAINER_ID sh
     $ docker logs $CONTAINER_ID
