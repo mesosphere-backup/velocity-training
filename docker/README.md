@@ -57,6 +57,7 @@ If you have issues sshing into the Master, check out https://docs.mesosphere.com
 
 Make sure the repo exists under your account, say https://hub.docker.com/u/mhausenblas/ and then:
     
+    $ docker login
     $ docker images
     REPOSITORY             TAG                 IMAGE ID            CREATED             VIRTUAL SIZE
     m-shop-app             latest              5891be3406d7        19 hours ago        349.8 MB
