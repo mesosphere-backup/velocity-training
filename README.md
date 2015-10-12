@@ -9,7 +9,7 @@ Training session at [Velocity NYC, 2015](http://velocityconf.com/devops-web-perf
 1. [Kubernetes](./kubernetes)
 1. [Putting It All Together](./piat)
 
-Once you've signed up for a team, check out the [training coordination page](http://j.mp/velocity-2015-container-training).
+Once you've signed up for a team, check out the [training coordination page](http://j.mp/velocity-2015-container-training) and see also the [slide deck](https://speakerdeck.com/mhausenblas/marathon-and-kubernetes) for more information.
 
 Then, install the [DCOS CLI](https://docs.mesosphere.com/install/cli/) and clone this repo in the directory where you've installed the CLI. For example, I've installed the CLI into `~/sandbox/dcos/ccm/dcos` hence I would do the following:
 

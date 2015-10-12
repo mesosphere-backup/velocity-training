@@ -43,6 +43,12 @@ Change the value of `ip-10-0-0-202.eu-west-1.compute.internal` to whatever the F
     $ kubectl delete service nginx-service
     $ kubectl delete pod nginx
 
+Todo:
+
+- to discovery the internal IP, do `kubectl get endpoints`
+- ssh into agent where K8S has scheduled the pod and do `hostname`
+- to view content on local browser, do `ssh -D 6996 -A core@54.165.181.143` and configure SOCKS proxy 
+
 ## Further resources
 
 - https://mesosphere.com/blog/2015/06/21/web-application-analytics-using-docker-and-marathon/
