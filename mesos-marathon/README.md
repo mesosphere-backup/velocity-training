@@ -13,8 +13,7 @@ Since Marathon is installed by default on DCOS this is a NOP.
 - In the Marathon UI
  - Start simple app such as `while [ true ] ; do echo "Hello DCOS" ; sleep 5 ; done`
  - Scale up and down
- - Make yourself familiar with health checks 
- - Start a Docker app (hint: use one from the previous session on Docker)
+ - Make yourself familiar with health checks
 
 ![Marathon Ui](../img/marathon-ui.png)
 
