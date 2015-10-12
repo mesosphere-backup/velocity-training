@@ -42,7 +42,7 @@ If you have issues sshing into the Master, check out https://docs.mesosphere.com
     $ mkdir -p mh9test/nginx
     $ cd mh9test/nginx
     $ touch Dockerfile
-    $ echo > Dockerfile <<EOF
+    $ cat > Dockerfile <<EOF
     FROM nginx
     MAINTAINER Michael Hausenblas <michael.hausenblas@mesosphere.io>
     RUN apt-get update && apt-get install -y git
