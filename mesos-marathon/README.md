@@ -9,12 +9,14 @@ Since Marathon is installed by default on DCOS this is a NOP.
 
 ## Launch apps via the Marathon UI 
 
-- Got to DCOS dashboard
+- Got to DCOS dashboard and click on the Marathon service
 - In the Marathon UI
  - Start simple app such as `while [ true ] ; do echo "Hello DCOS" ; sleep 5 ; done`
  - Scale up and down
  - Make yourself familiar with health checks 
  - Start a Docker app (hint: use one from the previous session on Docker)
+
+![Marathon Ui](../img/marathon-ui.png)
 
 ## Launch apps via Marathon HTTP API
 
