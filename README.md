@@ -4,14 +4,9 @@
 
 Training session at [Velocity NYC, 2015](http://velocityconf.com/devops-web-performance-ny-2015/public/schedule/detail/44830).
 
-1. [Containers &amp; Docker](./docker)
-1. [Mesos &amp; Marathon](./mesos-marathon)
-1. [Kubernetes](./kubernetes)
-1. [Putting It All Together](./piat)
+See the [slide deck](https://speakerdeck.com/mhausenblas/marathon-and-kubernetes) for background on containers, Docker, Mesos/Marathon, Kubernetes and further resources.
 
-Once you've signed up for a team, check out the [training coordination page](http://j.mp/velocity-2015-container-training) and see also the [slide deck](https://speakerdeck.com/mhausenblas/marathon-and-kubernetes) for more information.
-
-Then, install the [DCOS CLI](https://docs.mesosphere.com/install/cli/) and clone this repo in the directory where you've installed the CLI. For example, I've installed the CLI into `~/sandbox/dcos/ccm/dcos` hence I would do the following:
+First you want to install the [DCOS CLI](https://docs.mesosphere.com/install/cli/) and clone this repo in the directory where you've installed the CLI. For example, I've installed the CLI into `~/sandbox/dcos/ccm/dcos` hence I would do the following:
 
     $ pwd
     /Users/mhausenblas/sandbox/dcos/ccm/dcos
@@ -33,6 +28,13 @@ Going forward, we will call the directory you've installed the DCOS CLI in simpl
 Now check if you can access the DCOS cluster dashboard and you're all set:
 
 ![DCOS Dashboard](img/dcos-dashboard.png)
+
+The hands on sessions are:
+
+1. [Containers &amp; Docker](./docker)
+1. [Mesos &amp; Marathon](./mesos-marathon)
+1. [Kubernetes](./kubernetes)
+1. [Putting It All Together](./piat)
 
 ## Resources
 
